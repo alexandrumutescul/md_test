@@ -121,7 +121,7 @@ If you see this message after running the command: `WSL 2 requires an update to 
 
 1.  Open the [Microsoft Store](https://aka.ms/wslstore) and select your favorite Linux distribution.
 
-    ![View of Linux distributions in the Microsoft Store](media/store.png)
+    ![View of Linux distributions in the Microsoft Store]
 
     The following links will open the Microsoft store page for each distribution:
 
@@ -139,7 +139,7 @@ If you see this message after running the command: `WSL 2 requires an update to 
     *   [Alpine WSL](https://www.microsoft.com/store/apps/9p804crf0395)
 2.  From the distribution's page, select "Get".
 
-    ![Linux distributions in the Microsoft store](media/ubuntustore.png)
+    ![Linux distributions in the Microsoft store]
 
 ## [](#step-7---set-up-a-new-distribution)Step 7 - Set up a new distribution
 
@@ -147,7 +147,7 @@ The first time you launch a newly installed Linux distribution, a console window
 
 You will then need to [create a user account and password for your new Linux distribution](user-support).
 
-![Ubuntu unpacking in the Windows console](media/ubuntuinstall.png)
+![Ubuntu unpacking in the Windows console]
 
 **CONGRATULATIONS! You've successfully installed and set up a Linux distribution that is completely integrated with your Windows operating system!**
 
@@ -157,7 +157,7 @@ Windows Terminal enables multiple tabs (quickly switch between multiple Linux co
 
 [Install Windows Terminal](/en-us/windows/terminal/get-started).
 
-![Windows Terminal](media/terminal.png)
+![Windows Terminal]
 
 ## [](#set-your-distribution-version-to-wsl-1-or-wsl-2)Set your distribution version to WSL 1 or WSL 2
 
@@ -196,7 +196,7 @@ Below are related errors and suggested fixes. Refer to the [WSL troubleshooting 
 *   **Installation failed with error 0x80070003**
 
     *   The Windows Subsystem for Linux only runs on your system drive (usually this is your `C:` drive). Make sure that distributions are stored on your system drive:
-    *   Open **Settings** -> **Storage** -> **More Storage Settings: Change where new content is saved** ![Picture of system settings to install apps on C: drive](media/appstorage.png)
+    *   Open **Settings** -> **Storage** -> **More Storage Settings: Change where new content is saved** ![Picture of system settings to install apps on C: drive]
 *   **WslRegisterDistribution failed with error 0x8007019e**
 
     *   The Windows Subsystem for Linux optional component is not enabled:
@@ -212,7 +212,7 @@ Below are related errors and suggested fixes. Refer to the [WSL troubleshooting 
     *   Deselect “Compress contents” (as well as “Encrypt contents” if that’s checked) by opening the profile folder for your Linux distribution. It should be located in a folder on your Windows file system, something like: `USERPROFILE%\AppData\Local\Packages\CanonicalGroupLimited...`
     *   In this Linux distro profile, there should be a LocalState folder. Right-click this folder to display a menu of options. Select Properties > Advanced and then ensure that the “Compress contents to save disk space” and “Encrypt contents to secure data” checkboxes are unselected (not checked). If you are asked whether to apply this to just to the current folder or to all subfolders and files, select “just this folder” because you are only clearing the compress flag. After this, the `wsl --set-version` command should work.
 
-![Screenshot of WSL distro property settings](media/troubleshooting-virtualdisk-compress.png)
+![Screenshot of WSL distro property settings]
 
 <div class="alert is-info">
 
